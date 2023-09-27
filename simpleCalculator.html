@@ -1,0 +1,66 @@
+<html>
+<head>
+<style >
+
+</style>
+<script type="text/javascript">
+var n;
+function eval1(Calc)
+{
+    n=eval(Calc.Input.value);
+    Calc.Input.value=n;
+}
+function f1(Calc)
+{
+    Calc.Input.value=" ";
+}
+</script>
+</head>
+<body text=black><center>
+<FORM NAME="Calc">
+<table border=4  size="30%" cellpadding="1%" cellspacing="1%" align="center">
+<tr><th><input type=text name=t1 style=text-align:center value=Calculator  style=text-color:blue ></th></tr>
+<tr><th><input type="text" name="Input" size="30%"></th>
+</tr>
+<table border=4 size="30%">
+<tr align="center" >
+<td  size="20%"><INPUT TYPE="button" NAME="b1" VALUE="  c  "    OnClick="f1(this.form)"></td>
+<td   size="20%"><INPUT TYPE="button" NAME="b2" VALUE="(" OnClick="Calc.Input.value+='('" size="100%">
+<INPUT TYPE="button" NAME="b2" VALUE=")" OnClick="Calc.Input.value+=')'" size="100%">
+</td>
+<td   size="20%"><input type="button" name="b3" value="%" onClick="Calc.Input.value+='%'" size="100%"></td>
+<td   size="20%"><input type="button" name="b4" value="/" onClick="Calc.Input.value+='/'" size="100%"></td>
+</tr>
+
+<tr align="center">
+<td   size="20%"><input type="button" name="b5" value=" 7 " onClick="Calc.Input.value+='7'" size="100%"></td>
+<td   size="20%"><input type="button" name="b6" value=" 8 " onClick="Calc.Input.value+='8'" size="100%"></td>
+<td   size="20%"><input type="button" name="b7" value=" 9 " onClick="Calc.Input.value+='9'" size="100%"></td>
+<td   size="20%"><input type="button" name="b8" value=" * " onClick="Calc.Input.value+='*'" size="100%"></td>
+</tr>
+
+<tr>
+<td><input type="button" name="b9" value="4" onClick="Calc.Input.value+='4'" size="100%"></td>
+<td><input type="button" name="b10" value="5" onClick="Calc.Input.value+='5'" size="100%"></td>
+<td><input type="button" name="b11" value="6" onClick="Calc.Input.value+='6'" size="100%"></td>
+<td><input type="button" name="b12" value="-" onClick="Calc.Input.value+='-'" size="100%"></td>
+</tr>
+
+<tr>
+<td><input type="button" name="b13" value="1" onClick="Calc.Input.value+='1'" size="100%"></td>
+<td><input type="button" name="b14" value="2" onClick="Calc.Input.value+='2'" size="100%"></td>
+<td><input type="button" name="b15" value="3" onClick="Calc.Input.value+='3'" size="100%"></td>
+<td><input type="button" name="b16" value="+" onClick="Calc.Input.value+='+'" size="100%"></td>
+</tr>
+
+<tr>
+<td><input type="button" name="b17" value="+/-" onClick="Calc.Input.value+='+/-'" size="100%"></td>
+<td><input type="button" name="b18" value="0" onClick="Calc.Input.value+='0'" size="100%"></td>
+<td><input type="button" name="b19" value="." onClick="Calc.Input.value+='.'" size="100%"></td>
+<td><input type="button" name="Div" value="=" OnClick="eval1(this.form)"></td>
+</tr>
+</table>
+</form>
+</cenetr>
+</body>
+</html>
